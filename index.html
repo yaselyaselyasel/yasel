@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title>cuenta regresiva</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+<div class="clase">
+<p id="h2"></p>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var a=document.getElementById("h2");
+function valor(){
+
+var tiempo=new Date();
+var segundo=tiempo.getSeconds();
+var minuto=tiempo.getMinutes();
+var hora=tiempo.getHours();
+ a.innerHTML=hora+":"+minuto+":"+segundo+"s"
+}
+
+setInterval(valor,1000)
+
+</script>
+</body>
+</html>
